@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    color: #292929;
+}
+
+body {
+    background: #ffffff;
+    color: #898989;
+    font-family: 'Poppins', helvetica;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    margin: 25px 0;
+    padding: 0;
+    font-size: 15px;
+    color: #999999;
+    line-height: 28px;
+}
+
+h2 {
+    color: #292929;
+    font-weight: 600;
+}
+
+.gl-img {
+    height:255px;
+    width: 340px;
+    padding:15px;
+}
+
+.gl-img img{
+    height:255px;
+    width: 340px; 
+}
+
+/* 第一块 */
+.port-5.effect-1 .text-desc {
+    width:250px;
+    height:100px;
+    padding-top: 50px;
+}
+
+/* 第六块 */
+.port-5.effect-3 .text-desc {
+    width:250px;
+    height:100px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -90px;
+}
+
+/* 第二、五块 */
+.port-5.effect-2 .text-desc {
+    position: absolute;
+    width:250px;
+    height:100px;
+    margin-left: 420px;
+    margin-top: -150px;
+}
+
+
+/* 第三块 */
+.port-4.effect-1 .text-desc {
+    width:250px;
+    height:100px;
+    margin-top: -100px;
+}
+
+/* 第四块 */
+.port-4.effect-2 .text-desc {
+    width:250px;
+    height:100px;
+    margin-top: 200px;
+}
+
+.port-5.effect-1{
+    z-index: 9;
+}
+.port-5.effect-1 img{
+    transition: 0.5s;
+}
+.port-5.effect-1:hover img{
+    transform: scale(0.5) translateX(-100%); 
+    position: relative; z-index: 9; 
+}
+.port-5.effect-1 .text-desc{
+    transform: translateX(100%);
+     opacity: 0; 
+     padding-left: 120px;
+     transition: 0.5s;
+    }
+.port-5.effect-1:hover .text-desc
+{
+    transform: translateX(0px); 
+    opacity: 1;
+}
+
+.port-5.effect-2{z-index: 10;}
+.port-5.effect-2 img{transition: 0.5s; transform: none;}
+.port-5.effect-2:hover img{transform: scale(0.5) translateY(100%); position: relative; z-index: 9}
+.port-5.effect-2 .text-desc{transform: translateY(-100%); opacity: 0; padding: 20px; transition: 0.5s;}
+.port-5.effect-2:hover .text-desc{transform: translateY(0px); opacity: 1;}
+
+.port-5.effect-3 img{transition: 0.5s;}
+.port-5.effect-3:hover img{transform: scale(0.5) translateX(100%); position: relative; z-index: 9}
+.port-5.effect-3 .text-desc{transform: translateX(-100%); opacity: 0; padding-left: 170px;transition: 0.5s;}
+.port-5.effect-3:hover .text-desc{transform: translateX(0px); opacity: 1;}
+
+.port-4.effect-1 img{transition: 0.5s; transform: rotateY(360deg) scale(1, 1);}
+.port-4.effect-1 .text-desc{transform: rotateY(0deg) scale(0, 0); transition: 0.5s; opacity: 0; padding-left: 770px}
+.port-4.effect-1:hover .text-desc{transform: rotateY(360deg) scale(1, 1);  opacity: 1;}
+.port-4.effect-1:hover img{transform: rotateY(0deg) scale(0, 0);}
+
+.port-4.effect-2 img{transition: 0.5s; transform: rotateY(360deg) scale(1, 1);}
+.port-4.effect-2 .text-desc{transform: rotateY(0deg) scale(0, 0); transition: 0.5s; opacity: 0; padding-left: 70px}
+.port-4.effect-2:hover .text-desc{transform: rotateY(360deg) scale(1, 1);  opacity: 1;}
+.port-4.effect-2:hover img{transform: rotateY(0deg) scale(0, 0);}
+
+#blog .gl-img img{
+    transition: 0.5s;
+    transform:rotate(15deg);
+    -ms-transform:rotate(15deg); 	/* IE 9 */
+    -moz-transform:rotate(15deg); 	/* Firefox */
+    -webkit-transform:rotate(15deg); /* Safari 和 Chrome */
+    -o-transform:rotate(15deg); 	/* Opera */
+}
+
+#blog .gl-img img:hover{
+    transition: 0.3s;
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); 	/* IE 9 */
+    -moz-transform:rotate(0deg); 	/* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+    -o-transform:rotate(0deg); 	/* Opera */
+}
